@@ -1,0 +1,21 @@
+db:
+  names: ds1
+  isAutoWireMybatis: true
+  ds1:
+    type: com.toonyoo.micro.cloud.datasource.rws.support.HikariDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+    jdbcUrl: jdbc:mysql://10.201.5.45:3306/mall_koubei?characterEncoding=utf-8&amp;useSSL=false&amp;useConfigs=maxPerformance
+    username: test
+    password: test
+    maxPoolSize: 100
+    maxLifetime: 360000
+    minimumIdle: 10
+    idleTimeout: 180000
+    connectionTimeout: 200000
+    extMapper: com.toonyoo.business.common.dao.BaseMapper
+    basePackage: com.toonyoo.business.order.biz.dao
+    configLocation: classpath:mybatis-config.xml
+    mapperLocations: classpath:mappers/*.xml
+
+

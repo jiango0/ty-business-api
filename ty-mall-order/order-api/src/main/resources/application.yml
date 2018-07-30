@@ -1,0 +1,21 @@
+logging:
+  level:
+    com.toonyoo: debug
+    root: info
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ty-mall-order
+  profiles:
+    active: rc
+
+swagger:
+  enabled: true
+  title: ${spring.application.name}
+  description: 下单服务
+  version: 1.0-SNAPSHOT
+  base-package: com.toonyoo.business.order.api
+  base-path: /**
